@@ -5,10 +5,14 @@
     <title>Manglish unicode to ASCII converter</title>
 
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <meta property="og:title" content="Manglish Unicode to ASCII converter"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://anjaneyasivan.github.io/manglish/"/>
     <meta property="og:description" content="Malayalam Unicode to ASCII (FML) converter tool."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image"
           content="https://anjaneyasivan.github.io/manglish/manglish-cover-trump.jpg"/>
 </head>
@@ -41,23 +45,29 @@
     }
 </style>
 <body>
-<nav class="nav main-nav">
-    <div class="nav-left">
-        <a class="nav-item logo">
-            Manglish Unicode to ASCII Converter
-        </a>
-    </div>
+    <nav class="navbar">
+        <div class="container">
+          <div class="brand">MyShope ui</div>
+          <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <!-- <li class="login-btn"><a href="#">Login</a></li> -->
+          </ul>
+          <!-- <div class="login-btn">Login</div> -->
+          <div class="icons">
+            <div class="icon user"><i data-lucide="user-2"></i></div>
+            <div class="icon"><i data-lucide="bell"></i> </div>
+            <div class="icon"><i data-lucide="send"></i></div>
+            <div class="icon"><i data-lucide="instagram"></i></div>
+          </div>
 
-
-    <!-- This "nav-menu" is hidden on mobile -->
-    <!-- Add the modifier "is-active" to display it on mobile -->
-    <div class="nav-right nav-menu">
-        <a class="nav-item" href="https://www.facebook.com/anjaneya.sivan" target="_blank">
-            With love @dinkan
-        </a>
-
-    </div>
-</nav>
+          <div class="menu-toggle"><i data-lucide="align-right"></i></div>
+        </div>
+        
+      </nav>
 
 <div class="container">
     <div class="columns main-panel">
@@ -77,6 +87,32 @@
     </div>
 </div>
 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="dist/app.bundle.js"></script>
+<script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector(".nav-links");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
+
+    // Close the menu when a link is clicked
+    const navLinksList = document.querySelectorAll(".nav-links li");
+    navLinksList.forEach((link) => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("show");
+      });
+    });
+  </script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+
+
+
+
 </body>
 </html>

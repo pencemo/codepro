@@ -27,6 +27,8 @@
   },
   "homepage": "https://github.com/anjaneyasivan/manglish.github.io#readme",
   "dependencies": {
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "lucide": "^0.279.0",
+    "lucide-static": "^0.279.0"
   }
 }
