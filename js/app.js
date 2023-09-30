@@ -1,6 +1,4 @@
-/**
- * Created by anjaneyasivan on 28/04/17.
- */
+
 import letterMap from './LetterMap';
 import Converter from './TextConverter';
 import debounce from 'lodash/debounce';

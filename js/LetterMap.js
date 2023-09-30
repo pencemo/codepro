@@ -1,6 +1,4 @@
-/**
- * Created by anjaneyasivan on 19/06/16.
- */
+
 export default {
     "ം": "w",
     "ഃ": "x",

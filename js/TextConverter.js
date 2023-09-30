@@ -1,6 +1,4 @@
-/**
- * Created by anjaneyasivan on 19/06/16.
- */
+
 function Converter(maps) {
     this.maps = maps;
     this.letters = Object.keys(maps);
